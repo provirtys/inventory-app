@@ -1,5 +1,11 @@
+import '@assets/style/index.scss';
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+
+const modules = import.meta.glob('./assets/icons/*.svg');
+Object.values(modules).forEach(async (el) => await el());
+
+const app = createApp(App);
+
+app.mount('#app');

@@ -1,0 +1,75 @@
+@import './imports';
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100vh;
+}
+
+.page {
+  height: 100%;
+
+  &__main {
+    padding-top: 20px;
+    background-color: var(--gray-1);
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.page-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 65px 1fr;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
