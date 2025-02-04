@@ -25,6 +25,7 @@ export default defineConfig({
       '@store': fileURLToPath(new URL('./src/store', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@helpers': fileURLToPath(new URL('./src/helpers', import.meta.url)),
+      '@composables': fileURLToPath(new URL('./src/composables', import.meta.url)),
     },
     extensions: ['.js', '.vue', '.scss', '.html', '.ts']
   },

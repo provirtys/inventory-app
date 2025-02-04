@@ -9,6 +9,7 @@
       "@components/*": ["./src/components/*"],
       "@store/*": ["./src/store/*"],
       "@helpers/*": ["./src/helpers/*"],
+      "@composables/*": ["./src/composables/*"],
     },
 
     /* Linting */
