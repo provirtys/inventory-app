@@ -1,0 +1,14 @@
+.description-card {
+  display: flex;
+  height: 72px;
+  padding: 18px;
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: var(--primary);
+    transition: color var(--transition);
+  }
+}

@@ -1,0 +1,32 @@
+.inventory-item {
+
+  cursor: var(--cursor-pointer), auto;
+  transition: background-color 0.2s ease-in-out;
+
+  &--active, &:hover {
+    background-color: var(--bg-hover);
+  }
+
+  &__image-container {
+    padding: 23px 25px;
+    display: flex;
+  }
+
+  &__image {
+    width: 100%;
+    pointer-events: none;
+  }
+
+  &__quantity {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 6px;
+    border: var(--border) 1px solid;
+    @include font(10px, $font-family: var(--secondary-font));
+    color: var(--text-2);
+    padding: 2px 4px;
+    transition: var(--transition);
+    transition-property: border-color, color;
+  }
+}

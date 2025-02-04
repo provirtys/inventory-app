@@ -1,14 +1,21 @@
 @import './imports';
 
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: var(--main-font);
   font-size: 16px;
+  cursor: var(--cursor-default), auto;
+
+  &.dragging {
+    cursor: var(--cursor-grabbing), auto;
+  }
+
 }
 
 h1,
@@ -37,6 +44,8 @@ button {
   color: inherit;
   border: none;
   padding: 0;
+  font-family: inherit;
+  cursor: var(--cursor-pointer), auto;
 }
 
 ul,
@@ -52,24 +61,28 @@ li {
 
 .page {
   height: 100%;
-
-  &__main {
-    padding-top: 20px;
-    background-color: var(--gray-1);
-    width: 100%;
-    overflow: auto;
-  }
+  background-color: var(--bg-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--transition);
 }
 
 .page-container {
   height: 100%;
-  display: grid;
-  grid-template-rows: 65px 1fr;
+  max-width: 825px;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
-.container {
-  max-width: 1380px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+.main-content {
+  max-height: 500px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 238px 1fr;
+  gap: 24px;
 }

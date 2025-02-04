@@ -1,0 +1,20 @@
+.quantity-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--bg-60) !important;
+  backdrop-filter: blur(16px);
+  border-inline: none;
+  border-bottom: none;
+
+  &__input {
+    margin-bottom: 20px;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+  }
+}
