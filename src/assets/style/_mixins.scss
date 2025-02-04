@@ -38,15 +38,3 @@ $formats: (
   font-style: $font-style;
   letter-spacing: $letter-spacing;
 }
-
-@mixin desktop {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin phone {
-  @media (max-width: 567px) {
-    @content;
-  }
-}
