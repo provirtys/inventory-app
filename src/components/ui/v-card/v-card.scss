@@ -1,0 +1,11 @@
+.card {
+  background-color: var(--bg);
+  border: var(--border) 1px solid;
+  transition: var(--transition);
+  transition-property: background-color, border-color;
+
+
+  &--rounded {
+    border-radius: 12px;
+  }
+}
