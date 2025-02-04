@@ -5,10 +5,10 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
-      "@api/*": ["./src/api/*"],
       "@ui/*": ["./src/components/ui/*"],
       "@components/*": ["./src/components/*"],
-      "@stores/*": ["./src/stores/*"],
+      "@store/*": ["./src/store/*"],
+      "@helpers/*": ["./src/helpers/*"],
     },
 
     /* Linting */
@@ -18,5 +18,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/components/quantity-form/quantity-form.scss"]
 }
