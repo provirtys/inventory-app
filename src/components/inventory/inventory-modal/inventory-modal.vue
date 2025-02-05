@@ -1,7 +1,7 @@
 <template>
   <div class="inventory-modal" @close-modal="emit('closeModal')">
     <div class="inventory-modal__content">
-      <div v-if="selectedItem!.detailImg" class="inventory-modal__image-container">
+      <div v-if="selectedItem?.detailImg" class="inventory-modal__image-container">
         <img class="inventory-modal__image" :src="getImageUrl(selectedItem!.detailImg)" alt="">
         <hr class="inventory-modal__divider">
       </div>
@@ -32,15 +32,15 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import type { IEmits } from './types';
+import { storeToRefs } from 'pinia';
 import { getImageUrl } from '@helpers/image';
+import { useInventoryStore } from '@/store/inventory/inventory';
 import VSkeleton from '@ui/v-skeleton/v-skeleton.vue';
 import VButton from '@ui/v-button/v-button.vue';
-import { useModal } from '@/composables/useModal';
-import { storeToRefs } from 'pinia';
-import { useInventoryStore } from '@/store/inventory/inventory';
 import VIcon from '@ui/v-icon/v-icon.vue';
 import QuantityForm from '@components/quantity-form/quantity-form.vue';
+import { useModal } from '@/composables/useModal';
+import type { IEmits } from './types';
 
 const emit = defineEmits<IEmits>();
 
