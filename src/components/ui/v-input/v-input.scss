@@ -1,0 +1,35 @@
+.input-wrapper {
+  position: relative;
+  transition: background-color var(--transition);
+  border: 1px var(--border) solid;
+  border-radius: 4px;
+  overflow: hidden;
+  border-radius: 10px;
+  color: var(--text-2);
+
+  &--focused,
+  &--focused:hover {
+    border-color: var(--text-2);
+
+  }
+
+  &__input {
+    padding: 12px;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: var(--text-2);
+    @include font(14px, 100%, $font-family: var(--secondary-font));
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &::placeholder {
+      color: var(--text-2);
+    }
+  }
+}

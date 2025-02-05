@@ -1,4 +1,5 @@
 {
+  "homepage": "https://provirtys.io/inventory-app",
   "name": "inventory-app",
   "private": true,
   "version": "0.0.0",
@@ -6,14 +7,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "pinia": "^2.3.1",
+    "vite-plugin-svg-sprite": "^0.6.2",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@types/node": "^22.13.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.83.4",
     "typescript": "~5.6.2",
     "vite": "^6.0.5",
     "vue-tsc": "^2.2.0"

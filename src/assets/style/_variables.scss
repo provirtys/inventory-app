@@ -1,0 +1,48 @@
+:root {
+  --main-font: 'SF-Pro-Display', sans-serif;
+  --secondary-font: 'Inter', sans-serif;
+
+  --white: #FFF;
+  --black: #000;
+  --primary: var(--white);
+  --bg: #262626;
+  --bg-hover: #2F2F2F;
+  --bg-40: #26262680;
+  --bg-60: #26262699;
+  --bg-body: #1D1D1D;
+  --bg-adaptive: #F5F5F5;
+  --text: #2D2D2D;
+  --text-2: #FFFFFF66;
+  --text-3: #262626;
+  --red: #FA7272;
+  --red-hover: #FF8888;
+  --border: #4D4D4D;
+
+  --cursor-default: url('../icons/cursor.svg');
+  --cursor-pointer: url('../icons/cursor-pointer.svg');
+  --cursor-dragging: url('../icons/cursor-dragging.svg');
+
+  --skeleton: linear-gradient(90deg, #3C3C3C -20%, #444444 51%, #333333 100%);
+
+  --transition: 0.6s ease-in-out;
+}
+
+.light {
+  --primary: var(--black);
+  --bg: #F5F5F5;
+  --bg-hover: #EAEAEA;
+  --bg-40: #F5F5F580;
+  --bg-60: #F5F5F599;
+  --bg-body: #FFFFFF;
+  --bg-adaptive: #4D4D4D;
+  --text: #1A1A1A;
+  --text-2: #00000066;
+  --text-3: #F5F5F5;
+  --border: #CCCCCC;
+
+  --cursor-default: url('../icons/cursor-dark.svg');
+  --cursor-pointer: url('../icons/cursor-pointer-dark.svg');
+  --cursor-dragging: url('../icons/cursor-dragging-dark.svg');
+
+  --skeleton: linear-gradient(90deg, #E0E0E0 -20%, #F0F0F0 51%, #D9D9D9 100%);
+}

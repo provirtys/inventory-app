@@ -1,5 +1,55 @@
-# Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Тестовое задание для компании RLT
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Функциональность
+
+- Перемещение предметов инвентаря
+- Изменение их количества посредством удаления
+- Возможность менять цветовой режим
+- Возможность сброса инвентаря
+
+## 🛠️ Технологии
+
+- [Vue 3](https://vuejs.org/) — фронтенд-фреймворк для построения пользовательских интерфейсов  
+- [TypeScript](https://www.typescriptlang.org/) - типизация для повышения надежности кода
+- [Pinia](https://pinia.vuejs.org/) — управление состоянием приложения  
+
+### Требования для запуска в локальной среде
+- Node.js 18.20.0 версии или выше
+
+### Установка зависимостей
+```npm install```
+### Запуск локального сервера
+```npm run dev```
+### Запуск билда 
+```npm run build```
+
+### Структура проекта
+
+```
+./
+└── inventory-app
+    ├── public # Папка с шаблонами и статичными файлами
+    ├── src # Весь исходный код проекта
+    │   ├── assets # Дополнительные статические ресурсы
+    │   │   └── fonts
+    │   │   └── icons
+    │   │   └── images
+    │   │   └── style
+    │   ├── components # Все vue компоненты проекта (*)
+    │   │   ├── component
+    │   │   ├── component
+    │   │   ├── ...
+    │   │   ├── UI # Простые ui эелементы интерфейса: кнопки, аккордеоны, модалки и т.д.
+    │   │   │   ├── v-button
+    │   │   │   │   └── v-button.vue
+    │   │   │   │   └── v-button.scss
+    │   │   │   ├── v-input
+    │   │   │   │   └── v-input.vue
+    │   │   │   │   └── v-input.scss
+    │   │   │   └── ...
+    │   ├── composables # Переиспользуемые функции
+    │   ├── helpers # Вспомогательные функции
+    │   ├── store # Папка с хранилищем приложения
+    │   ├── main.ts
+    └── └── App.vue
