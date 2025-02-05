@@ -1,0 +1,8 @@
+.reseter {
+  position: fixed;
+  top:10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--switcher-bg);
+  color: var(--switcher-text);
+}
